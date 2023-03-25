@@ -35,9 +35,9 @@ echo "weston" >> /home/plex/.bashrc
 
 # create a systemd service that always logs in user plex automatically on tty1
 mkdir -p /etc/systemd/system/getty@tty1.service.d
-echo "[Service]" > /etc/systemd/system/getty@tty1.service.d/override.conf
-echo "ExecStart=" >> /etc/systemd/system/getty@tty1.service.d/override.conf
-echo "ExecStart=-/sbin/agetty --autologin plex --noclear %I 38400 linux" >> /etc/systemd/system/getty@tty1.service.d/override.conf
+echo "[Service]
+ExecStart=
+ExecStart=-/sbin/agetty --autologin plex --noclear %I 38400 linux" > /etc/systemd/system/getty@tty1.service.d/override.conf
 
 # activate unattended upgrades (automatic os security updates)
 echo unattended-upgrades unattended-upgrades/enable_auto_updates boolean true | debconf-set-selections
