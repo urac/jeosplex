@@ -1,7 +1,7 @@
 # Jeosplex
 ## Just enough Operating System for Plex
 
-Shell script that turns a Debian testing minimal install into a Plex HTPC appliance.
+Shell script that turns a Debian testing (bookworm) minimal install into a Plex HTPC appliance.
 Will not run on Debian 11 (bullseye) because of Weston version, only tested on testing.
 
 ## Instructions
