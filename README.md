@@ -1,7 +1,7 @@
 # Jeosplex
 ## Just enough Operating System for Plex
 
-Script that turns a Debian testing minimal install into a Plex HTPC appliance
+Script that turns a Debian testing minimal install into a Plex HTPC appliance.
 Needs at least Debian 11 (bullseye), only tested on bullseye.
 
 ## Instructions
